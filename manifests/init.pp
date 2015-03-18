@@ -46,17 +46,19 @@ class isy994 (
 
 ) inherits isy994::params {
 
-
   staging::file{"admin.jnlp-${version}":
     target => "${isy_root}/${version}/admin.jnlp"
     source => $admin_jnlp
   }
+
   staging::file{"admin16.jnlp-${version}":
     target => "${isy_root}/${version}/admin16.jnlp"
     source => $admin16_jnlp
   }
 
-
-}
+  staging::file{"jar-${version}":
+    target => "${isy_root}/${version}/admin16.jnlp"
+    source => $admin16_jnlp
+  }
 
 }

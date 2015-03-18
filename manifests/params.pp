@@ -39,5 +39,11 @@ class isy994::params {
   $isy_root     = undef
   $version      = '4.2.8'
   $admin_jnlp   = "http://isy.universal-devices.com/994i/${version}/admin.jnlp"
-  $admin16_jnlp = "http://isy.universal-devices.com/994i/${version}/admin16.jnlp
+  $admin16_jnlp = "http://isy.universal-devices.com/994i/${version}/admin16.jnlp"
+  $dashboard_jnlp = "http://isy.universal-devices.com/994i/${version}/dashboard.jnlp"
+  $dashboard16_jnlp = "http://isy.universal-devices.com/994i/${version}/dashboard16.jnlp"
+#  $firmware_994i_zwave = "http://isy.universal-devices.com/updates/Insteon_UD994/4.2.28/insteon_4.2.28.zip"
+  $firmware_994i_zwave = "http://isy.universal-devices.com/updates/Insteon_UD994/${version}/insteon_${version}.zip"
+#  $firmware_994i_zibee = "http://isy.universal-devices.com/updates/Insteon_UD994_OADR/4.2.28/udi_oadr_4.2.28.zip"
+  $firmware_994i_zibee = "http://isy.universal-devices.com/updates/Insteon_UD994_OADR/$version/udi_oadr_${version}.zip"
 }
